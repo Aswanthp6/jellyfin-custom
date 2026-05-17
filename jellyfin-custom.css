@@ -1,1 +1,51 @@
+/* ================= FIX TINY DETAIL PAGE ================= */
 
+@media (min-width: 900px) {
+
+.detailImageContainer {
+
+width: 320px !important;
+
+min-width: 320px !important;
+
+margin-right: 40px !important;
+
+}
+
+.detailImageContainer .card,
+.detailImageContainer .cardBox,
+.detailImageContainer .cardScalable {
+
+width: 320px !important;
+
+max-width: 320px !important;
+
+}
+
+.detailPagePrimaryContainer {
+
+display: flex !important;
+
+align-items: flex-start !important;
+
+gap: 40px !important;
+
+}
+
+.detailPagePrimaryContent {
+
+max-width: 900px !important;
+
+}
+
+.layout-desktop .detailPagePrimaryContent h1 {
+
+font-size: 3rem !important;
+
+line-height: 1.1 !important;
+
+margin-bottom: 20px !important;
+
+}
+
+}
