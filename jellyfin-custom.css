@@ -1,61 +1,39 @@
-/* ================= FORCE BIG DETAIL POSTER ================= */
-
-@media (min-width: 900px) {
-
-.itemBackdrop {
-
-filter: brightness(0.45);
-
-}
+/* ================= BIGGER MOVIE DETAIL POSTER ================= */
 
 .detailImageContainer {
 
-flex: 0 0 340px !important;
+width: 420px !important;
 
-max-width: 340px !important;
+max-width: 420px !important;
 
-width: 340px !important;
+flex: 0 0 420px !important;
 
 margin-right: 50px !important;
 
 }
 
-.detailImageContainer img,
-.detailImageContainer .card,
-.detailImageContainer .cardBox,
-.detailImageContainer .cardScalable {
+.detailImageContainer .cardImageContainer {
 
-width: 340px !important;
+height: 630px !important;
 
-max-width: 340px !important;
+border-radius: 20px !important;
 
-}
-
-.detailPagePrimaryContainer {
-
-display: flex !important;
-
-align-items: flex-start !important;
-
-gap: 50px !important;
+background-size: cover !important;
 
 }
 
-.layout-desktop .detailPagePrimaryContent h1 {
+.detailPagePrimaryContent {
 
-font-size: 3.2rem !important;
+max-width: 1000px !important;
+
+}
+
+.detailPagePrimaryContent h1 {
+
+font-size: 3rem !important;
 
 line-height: 1.1 !important;
 
 font-weight: 700 !important;
-
-}
-
-}
-/* TEST DETAIL PAGE */
-
-.detailPageWrapper {
-
-background: red !important;
 
 }
