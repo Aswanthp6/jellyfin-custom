@@ -1,24 +1,33 @@
-/* ================= FIX TINY DETAIL PAGE ================= */
+/* ================= FORCE BIG DETAIL POSTER ================= */
 
 @media (min-width: 900px) {
 
-.detailImageContainer {
+.itemBackdrop {
 
-width: 320px !important;
-
-min-width: 320px !important;
-
-margin-right: 40px !important;
+filter: brightness(0.45);
 
 }
 
+.detailImageContainer {
+
+flex: 0 0 340px !important;
+
+max-width: 340px !important;
+
+width: 340px !important;
+
+margin-right: 50px !important;
+
+}
+
+.detailImageContainer img,
 .detailImageContainer .card,
 .detailImageContainer .cardBox,
 .detailImageContainer .cardScalable {
 
-width: 320px !important;
+width: 340px !important;
 
-max-width: 320px !important;
+max-width: 340px !important;
 
 }
 
@@ -28,23 +37,17 @@ display: flex !important;
 
 align-items: flex-start !important;
 
-gap: 40px !important;
-
-}
-
-.detailPagePrimaryContent {
-
-max-width: 900px !important;
+gap: 50px !important;
 
 }
 
 .layout-desktop .detailPagePrimaryContent h1 {
 
-font-size: 3rem !important;
+font-size: 3.2rem !important;
 
 line-height: 1.1 !important;
 
-margin-bottom: 20px !important;
+font-weight: 700 !important;
 
 }
 
