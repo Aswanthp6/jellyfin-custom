@@ -1,29 +1,30 @@
-/* ================= FORCE BIG DETAIL POSTER ================= */
+/* Fix for the tiny title card and overlapping text */
 
-/* 1. Set the card size and remove negative margins */
-.card.portraitCard {
+/* 1. Set the card size */
+div.detailImageContainer.hide-mobile .card.portraitCard {
     width: 250px !important;
     height: 375px !important;
     float: none !important;
     margin: 0 !important;
 }
 
-/* 2. Position the image container and create spacing for the description */
-.detailImageContainer.hide-mobile {
+/* 2. Position the container and create the gap */
+div.detailImageContainer.hide-mobile {
     float: left !important;
     width: 250px !important;
     margin-right: 40px !important;
     margin-bottom: 20px !important;
     height: auto !important;
-}
-
-/* 3. Ensure the main container wraps the floated image correctly */
-.detailPagePrimaryContainer {
     display: block !important;
-    overflow: auto !important; /* Clears the float */
 }
 
-/* 4. Ensure internal card elements fill the new size */
+/* 3. Ensure the text flows correctly around the image */
+div.detailPagePrimaryContainer {
+    display: block !important;
+    overflow: auto !important;
+}
+
+/* 4. Fix for internal card scaling */
 .cardBox, .cardScalable {
     width: 100% !important;
     height: 100% !important;
