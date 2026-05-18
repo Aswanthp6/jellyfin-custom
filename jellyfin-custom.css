@@ -1,26 +1,25 @@
-/* FORCE CARD SIZE */
-#itemDetailPage .detailImageContainer .card.portraitCard {
+/* Only apply these changes to the Movie Detail page */
+#itemDetailPage .detailImageContainer.hide-mobile .card.portraitCard {
     width: 250px !important;
     height: 375px !important;
-    min-width: 250px !important;
     float: none !important;
+    margin: 0 !important;
 }
 
-/* POSITION CONTAINER */
-#itemDetailPage .detailImageContainer {
-    width: 250px !important;
+#itemDetailPage .detailImageContainer.hide-mobile {
     float: left !important;
+    width: 250px !important;
     margin-right: 40px !important;
-    display: block !important;
+    margin-bottom: 20px !important;
     height: auto !important;
+    display: block !important;
 }
 
-/* FIX LAYOUT FLOW */
 #itemDetailPage .detailPagePrimaryContainer {
     display: block !important;
+    overflow: auto !important;
 }
 
-/* ENSURE CONTENT FILLS BOX */
 #itemDetailPage .cardBox, 
 #itemDetailPage .cardScalable {
     width: 100% !important;
