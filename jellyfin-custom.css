@@ -1,7 +1,12 @@
-/* 1. Only apply changes on Desktop screens */
-@media all and (min-width: 1000px) {
+/* Consolidation of layout fixes */
 
-    /* 2. Only apply changes on the Movie/Item Detail page */
+/* Restore normal cards on library/home pages */
+.card.portraitCard {
+    float: none !important;
+}
+
+/* Specific fix for Movie Info page on Desktop */
+@media all and (min-width: 1000px) {
     #itemDetailPage .detailImageContainer.hide-mobile .card.portraitCard {
         width: 250px !important;
         height: 375px !important;
