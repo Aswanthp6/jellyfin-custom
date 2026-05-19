@@ -1,1 +1,24 @@
+/* ================= NETFLIX HOVER EFFECT ================= */
+@media (hover: hover) and (pointer: fine) {
+    /* 1. Apply transform ONLY to the top-level card container */
+    .card:hover {
+        transform: translateY(-10px) scale(1.05) !important;
+        z-index: 999 !important; /* Ensure hovered card is on top of everything */
+        box-shadow: 0px 12px 26px rgba(0, 0, 0, 0.5) !important;
+        transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+    }
 
+    /* 2. Prevent children from also transforming (stops double-scaling/blinking) */
+    .card:hover .cardBox,
+    .card:hover .innerCardBox,
+    .card:hover .itemImage,
+    .card:hover .listItemImage,
+    .card:hover .lazy-image-fadein-fast {
+        transform: none !important;
+    }
+
+    /* 3. Ensure the clickable area is stable */
+    .cardImageContainer {
+        pointer-events: auto !important;
+    }
+}
